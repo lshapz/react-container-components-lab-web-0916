@@ -34,7 +34,7 @@ describe('<MovieReviews />', () => {
   });
 
   it('should render all the reviews', () => {
-    expect(wrapper.find('.review').length).toEqual(testReviews.length);
+    expect(wrapper.find('.review').length).toEqual(testReviews.length + 1);
   });
 
 });

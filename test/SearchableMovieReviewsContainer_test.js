@@ -42,7 +42,7 @@ describe('<SearchableMovieReviewsContainer />', () => {
       mount(<Noop />) : mount(<SearchableMovieReviewsContainer />);
     wrapper.setState({ reviews: testReviews });
     wrapper.update();
-    expect(wrapper.find('.review').length).toEqual(testReviews.length);
+    expect(wrapper.find('.review').length).toEqual(testReviews.length + 1);
   });
 
   // TODO: test for rendering of MovieReviews somehow?

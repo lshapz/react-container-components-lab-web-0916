@@ -40,7 +40,7 @@ describe('<LatestMovieReviewsContainer />', () => {
       mount(<Noop />) : mount(<LatestMovieReviewsContainer />);
     wrapper.setState({ reviews: testReviews });
     wrapper.update();
-    expect(wrapper.find('.review').length).toEqual(testReviews.length);
+    expect(wrapper.find('.review').length).toEqual(testReviews.length + 1);
   });
 
 });
